@@ -44,7 +44,7 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
@@ -70,7 +70,7 @@ body {
     margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary_main {
     display: block;
     font-size: 6rem;
     font-weight: 700;
@@ -83,7 +83,7 @@ body {
     /* animation-delay: 0.2s; */
 }
 
-.heading-primary-sub {
+.heading-primary_sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -159,7 +159,7 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.btn-white{
+.btn_white{
     background-color: white;
     color: #777;
 }
@@ -177,7 +177,7 @@ body {
     transition: all .4s;
 }
 
-.btn-white::after{
+.btn_white::after{
     background-color: white;
 }
 
@@ -186,7 +186,7 @@ body {
     opacity: 0;
 }
 
-.btn-animated {
+.btn_animated {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
 }
