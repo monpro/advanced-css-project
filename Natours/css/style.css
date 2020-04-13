@@ -235,6 +235,10 @@ body {
       transform: rotateY(180deg); }
       .card__side_back_1 {
         background-image: linear-gradient(to right bottom, #ffb900, #ff7730); }
+      .card__side_back_2 {
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .card__side_back_3 {
+        background-image: linear-gradient(to right bottom, rgba(76, 76, 244, 0.379), #363698); }
   .card:hover .card__side_front {
     transform: rotateY(-180deg); }
   .card:hover .card__side_back {
@@ -248,9 +252,9 @@ body {
     .card__picture_1 {
       background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg); }
     .card__picture_2 {
-      background-image: url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg); }
     .card__picture_3 {
-      background-image: url(../img/nat-5.jpg); }
+      background-image: linear-gradient(to right bottom, rgba(76, 76, 244, 0.379), #363698), url(../img/nat-7.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -266,6 +270,10 @@ body {
     box-decoration-break: clone; }
     .card__heading_span_1 {
       background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.75), rgba(255, 119, 48, 0.75)); }
+    .card__heading_span_2 {
+      background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.75), rgba(40, 180, 133, 0.75)); }
+    .card__heading_span_3 {
+      background-image: linear-gradient(to right bottom, rgba(76, 76, 244, 0.75), rgba(54, 54, 152, 0.75)); }
   .card__details {
     padding: 3rem; }
     .card__details ul {
@@ -278,6 +286,23 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #eee; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center; }
+  .card-price__box {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 8rem; }
+  .card-price__value {
+    font-size: 6rem;
+    font-weight: 100; }
+  .card-price__only {
+    font-size: 1.5rem;
+    text-transform: uppercase; }
 
 .header {
   height: 95vh;
