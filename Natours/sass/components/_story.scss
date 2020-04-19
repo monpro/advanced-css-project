@@ -2,7 +2,7 @@
   width: 75%;
   margin: 0 auto;
   box-shadow: 0 3rem 6rem rgba($color-black, .1);
-  background-color: $color-white;
+  background-color: rgba($color-white, .5);
   border-radius: 3px;
   padding: 6rem;
   padding-left: 9rem;
@@ -25,7 +25,7 @@
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all .5s;
-    //backface-visibility: hidden;
+    backface-visibility: hidden;
 
   }
 
@@ -44,7 +44,7 @@
     text-align: center;
     opacity: 0;
     transition: all .5s;
-    //backface-visibility: hidden;
+    backface-visibility: hidden;
   }
 
   &:hover &__caption {
