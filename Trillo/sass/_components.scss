@@ -140,7 +140,7 @@
     transform: scaleY(0);
     transition: transform .2s,
                 width .2s cubic-bezier(1, 0, 0, 1) .2s,
-                background-color .1;
+                background-color .1s;
   }
 
 
@@ -184,4 +184,56 @@
   color: var(--color-grey-light-4);
   text-align: center;
   padding: 2.5rem;
+}
+
+
+////////////////////////
+//Gallery
+
+.gallery {
+  display: flex;
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+////////////////////////
+//Hotel Overview
+
+.overview {
+  display: flex;
+  align-items: center;
+  &__heading {
+
+  }
+
+  &__stars {
+    margin-right: auto;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
+
+  &__location {
+
+  }
+
+  &_rating {
+
+  }
+
+  &__rating-average {
+
+  }
+
+  &__rating-count {
+
+  }
+
+
 }
