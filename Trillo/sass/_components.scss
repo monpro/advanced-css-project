@@ -9,6 +9,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: $sc-smallest) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-grey-light-2);
+  }
+
   &__input {
     font-family: inherit;
     font-size: inherit;
@@ -173,6 +180,13 @@
     height: 1.7rem;
     margin-right: 2rem;
     fill: currentColor;
+
+    @media only screen and (max-width: $sc-small) {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 0;
+      margin-bottom: .8rem;
+    }
   }
 
   &__link:link,
@@ -189,6 +203,12 @@
     @media only screen and (max-width: $sc-medium) {
       justify-content: center;
       padding: 2rem;
+    }
+
+    @media only screen and (max-width: $sc-small) {
+      flex-direction: column;
+      padding: 1.5rem .5rem;
+
     }
   }
 
@@ -235,6 +255,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: $sc-medium) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
   }
 
   &__stars {
@@ -270,17 +295,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: $sc-medium) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px;
+
+    @media only screen and (max-width: $sc-medium) {
+      font-size: 1.8rem;
+
+    }
   }
 
   &__rating-count {
     font-size: .8rem;
     text-transform: uppercase;
+    @media only screen and (max-width: $sc-medium) {
+      font-size: .5rem;
+
+    }
   }
 
 }
